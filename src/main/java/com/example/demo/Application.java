@@ -131,7 +131,7 @@ public class Application {
         System.out.println("3 - Product name");
         String field;
         switch (scanner.nextLine()) {
-            case "1" -> field = "item_name";
+            case "1" -> field = "brand";
             case "2" -> field = "type";
             case "3" -> field = "brand";
             default -> {
