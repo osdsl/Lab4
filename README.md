@@ -30,22 +30,19 @@
 
 Убедитесь, что на Вашем компьютере установлен [PostgreSQL](https://www.postgresql.org/download/).
 
-```
-
 ### 2. Создайте базу данных и пользователя:
 
-Откройте терминал и введите следующие команды для создания базы данных и пользователя:
+
+Откройте SQL Shell и введите следующие команды для создания базы данных и пользователя:
 
 ```
-sudo -i -u postgres
-psql
 CREATE DATABASE postgres WITH ENCODING 'UTF8';
 ```
 
 Также, необходимо создать пользователя postgres с правами, позволяющими использовать базу данных:
 
 ```
-CREATE USER postgres WITH ENCRYPTED PASSWORD 'vbpouz75';
+CREATE USER postgres WITH ENCRYPTED PASSWORD 'qwerty';
 GRANT ALL PRIVILEGES ON DATABASE postgres TO postgres; 
 ```
 
@@ -57,7 +54,7 @@ GRANT ALL PRIVILEGES ON DATABASE postgres TO postgres;
 psql -U postgres -d postgres -f init.sql
 ```
 
-В этом скрипте создается и заполняется тестовыми данными таблиа clothes
+В этом скрипте создается и заполняется тестовыми данными таблица список телевизоров
 
 ## Инструкция по сборке и запуску Java-проекта из командной строки
 
