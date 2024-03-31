@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 /**
- * Класс для работы с таблией бд
+ * Класс для работы с таблицей бд
  */
 @Repository
 public class TvControl {
@@ -49,7 +49,7 @@ public class TvControl {
     }
 
     /**
-     * Удаляет строку в таблицце
+     * Удаляет строку в таблице
      * @param id идентификатор строки
      */
     public void deleteTv(Integer id) {
